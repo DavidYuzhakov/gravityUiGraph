@@ -1,0 +1,84 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+}
+
+.graph-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.title {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 40px;
+  padding-left: 15px !important;
+
+  line-height: 40px;
+  padding-left: 10px;
+  color: #708090;
+  font-size: 15px;
+
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  background-color: #fff;
+}
+
+.answers {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.answer {
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 5px 8px;
+  font-size: 14px;
+}
+
+.graph-block-wrapper {
+  position: relative;
+  padding: 0 10px;
+  padding-top: 50px;
+  background: #ebebeb !important;
+  border-radius: 8px;
+  border-width: 3px !important;
+}
+
+/* Стили для блоков с якорями */
+.graph-block {
+  position: relative !important;
+  overflow: visible !important;
+}
+
+.block-content {
+  padding: 16px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Стили для якорей */
+.anchor {
+  width: 15px !important;
+  height: 15px !important;
+  cursor: pointer !important;
+  transform: translate(-50%, -50%) !important;
+  z-index: 10 !important;
+}
