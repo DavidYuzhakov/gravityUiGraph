@@ -73,12 +73,3 @@ body {
   text-align: center;
   font-weight: bold;
 }
-
-/* Стили для якорей */
-.anchor {
-  width: 15px !important;
-  height: 15px !important;
-  cursor: pointer !important;
-  transform: translate(-50%, -50%) !important;
-  z-index: 10 !important;
-}

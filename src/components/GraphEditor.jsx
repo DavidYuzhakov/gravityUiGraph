@@ -57,7 +57,7 @@ const config = {
 
 const blockList = [
   {
-    is: 'block-text',
+    is: 'singleQuest',
     id: 'block1',
     x: 100,
     y: 100,
@@ -98,7 +98,7 @@ const blockList = [
   },
   {
     id: 'block2',
-    is: 'block-action',
+    is: 'singleQuest',
     x: 300,
     y: 100,
     width: 150,
@@ -138,7 +138,7 @@ const blockList = [
   },
   {
     id: 'block3',
-    is: 'block-action',
+    is: 'singleQuest',
     x: 500,
     y: 100,
     width: 150,
@@ -170,7 +170,7 @@ const blockList = [
         type: 'OUT',
       },
       {
-        id: 'answer3_3',
+        id: 'answer 3_3',
         blockId: 'block3',
         type: 'OUT',
       },
@@ -189,6 +189,7 @@ export function GraphEditor() {
     })
     start()
     graph.zoomTo('center', { padding: 100 })
+    console.log(graph)
   }, [graph, setEntities, start])
 
   useLayoutEffect(() => {
@@ -212,6 +213,7 @@ export function GraphEditor() {
   }, [])
 
   const renderBlockFn = (graph, block) => {
+    console.log(block)
     return (
       <GraphBlock graph={graph} block={block}>
         {/* Block content */}
